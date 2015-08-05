@@ -29,7 +29,6 @@ print ''
 
 #Define the function of the equivalent magnetic field
 def equiv_magn_field(redshift):
-	#b_r = (4.0*((1.0+redshift)**2)*(10.0**(-6.0)))
 	b_r = 3.25*((1.0+redshift)**2)
 	return b_r
 	
@@ -97,7 +96,6 @@ print ''
 #Define the function of the synchrotron lifetime	
 def synch_age(nu_break,redshift,magn_field,emf):
 	tsynch = ((1.61*(10.0**(3.0)))*(magn_field**(0.5))/(magn_field**(2.0))+(emf**(2.0)))*(((1.0+redshift)*nu_break)**(-1.0/2.0))
-	#tsynch = ((0.82*(magn_field**(1.0/2.0)))/(magn_field**(2.0))+(emf**(2.0)))*(((1.0+redshift)*nu_break)**(-1.0/2.0))
 	return tsynch
 	
 t_synch	= synch_age(nu_break,redshift,magn_field,emf)
