@@ -11,15 +11,9 @@
 import math
 
 print '******************************************************************************************************'
-print 'Welcome!'
 print ''
 print 'Find out the synchrotron lifetime in a galaxy'
 print ''
-print 'Script written by E.T.'
-print ''
-print 'Facing issues, having suggestions for impovement?'
-print ''
-print 'Please do not hesitate to contact me : ***etremou@gmail.com***'
 print '******************************************************************************************************'
 
 redshift = float(raw_input('Please type the redshift of the galaxy :'))
